@@ -1,6 +1,6 @@
 pyrogram
 tgcrypto
-py-tgcalls=0.6.1
+py-tgcalls
 python-dotenv
 youtube_dl
 youtube_search_python
@@ -16,3 +16,4 @@ python-arq
 future
 psutil
 wget
+git+https://github.com/pytgcalls/pytgcalls
