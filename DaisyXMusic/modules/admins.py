@@ -28,7 +28,7 @@ from DaisyXMusic.services.callsmusic import callsmusic
 from DaisyXMusic.services.queues import queues
 
 
-@Client.on_message(filters.command("adminreset"))
+@Client.on_message(filters.command("reload"))
 async def update_admin(client, message: Message):
     chat_id = get_chat_id(message.chat)
     set(
@@ -112,7 +112,7 @@ async def skip(_, message: Message):
     await message.reply_text(f"- Skipped **{skip[0]}**\n- Now Playing **{qeue[0][0]}**")
 
 
-@Client.on_message(filters.command("admincache"))
+@Client.on_message(filters.command("refresh"))
 @errors
 async def admincache(client, message: Message):
     set(
